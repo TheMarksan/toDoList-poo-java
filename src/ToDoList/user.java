@@ -1,8 +1,8 @@
 package ToDoList;
 
 public class user {
-    String username;
-    String senha = "123";
+    private String username;
+    private String senha = "123";
 
     public user(String username){
         this.username = username;

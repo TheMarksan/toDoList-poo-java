@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class main {
     private static ArrayList<task> tarefas = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         int opcao;
 
@@ -87,7 +88,7 @@ public class main {
             for (int i = 0; i < tarefas.size(); i++) {
                 task tarefa = tarefas.get(i);
                 String status = tarefa.showStatus() ? "[Concluída]" : "[Pendente]";
-                System.out.println((i + 1) + ". " + tarefa.showDescricao() + " - Categoria: " + tarefa.showCategoria() + " - Satus: "+status);
+                System.out.println((i + 1) + ". "+tarefa.showTitulo() + "\n - Descrição: " + tarefa.showDescricao() + "\n - Categoria: " + tarefa.showCategoria() + "\n - Satus: "+status+"\n");
             }
         }
     }
@@ -98,7 +99,7 @@ public class main {
         }else{
             for (int i = 0; i < tarefas.size(); i++) {
                 task tarefa = tarefas.get(i);
-                System.out.println((i + 1) + ". " + tarefa.showDescricao());
+                System.out.println((i + 1) + ". " + tarefa.showTitulo());
             }
             System.out.println("Qual tarefa deseja remover? (1-"+tarefas.size()+")");
             int index = scanner.nextInt();
@@ -107,8 +108,8 @@ public class main {
         }
     }
     //private static void marcarTarefa(){} - chamar método marcarConcluida() de uma instancia task da lista
-    //private static void desmarcarTarefa(){} - - chamar método desmarcarConcluida() de uma instancia task da lista
-    //private static void filtrarTarefa(){}
+    //private static void desmarcarTarefa(){} - chamar método desmarcarConcluida() de uma instancia task da lista
+    //private static void filtrarTarefa(){} - peça do usuário uma string e compare com a categoria da instancia tarefa no index atual da lista (metódo showCategoria()) e imprima a instancia listada
 
 }
 
