@@ -2,11 +2,12 @@ package ToDoList;
 import javax.swing.undo.UndoableEditSupport;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class main {
+public class main{
     private static ArrayList<task> tarefas = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         int opcao;
 
         System.out.print("Digite seu nome: ");
@@ -107,8 +108,8 @@ public class main {
             System.out.println("\nTarefa removida com sucesso!");
         }
     }
-    //private static void marcarTarefa(){} - chamar método marcarConcluida() de uma instancia task da lista
-    //private static void desmarcarTarefa(){} - chamar método desmarcarConcluida() de uma instancia task da lista
+    //private static void marcarTarefa(){} - chamar método marcarConcluida() de uma instancia da classe task da lista
+    //private static void desmarcarTarefa(){} - chamar método desmarcarConcluida() de uma instancia da classe task da lista
     //private static void filtrarTarefa(){} - peça do usuário uma string e compare com a categoria da instancia tarefa no index atual da lista (metódo showCategoria()) e imprima a instancia listada
 
 }
