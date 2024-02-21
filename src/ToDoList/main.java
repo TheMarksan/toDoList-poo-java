@@ -106,7 +106,8 @@ public class main {
             System.out.println("\nTarefa removida com sucesso!");
         }
     }
-    //private static void marcarTarefa(){}
+    //private static void marcarTarefa(){} - chamar método marcarConcluida() de uma instancia task da lista
+    //private static void desmarcarTarefa(){} - - chamar método desmarcarConcluida() de uma instancia task da lista
     //private static void filtrarTarefa(){}
 
 }

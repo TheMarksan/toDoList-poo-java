@@ -29,4 +29,7 @@ public class task {
     public void marcarConcluida() {
         this.status = true;
     }
+    public void desmarcarConcluida() {
+        this.status = false;
+    }
 }
